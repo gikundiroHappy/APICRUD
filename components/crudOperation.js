@@ -159,7 +159,11 @@ export default function CrudOperation() {
       </Modal>
 
       {isLoading ? (
-        <ActivityIndicator size="large" color="blue" />
+        <View
+          style={{ flex: 1, alignItems: "center", justifyContent: "center" }}
+        >
+          <ActivityIndicator size="large" color="#909E84" />
+        </View>
       ) : (
         <ScrollView>
           <View style={styles.rowBetween}>
